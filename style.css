@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap');
 
 :root {
     --main-bg-color: rgb(237, 242, 248);
@@ -17,7 +17,7 @@
   }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;;
     background-color: var(--main-bg-color);
     color: var(--font-color);
     width: 100%;
@@ -29,6 +29,14 @@ a {
     color: inherit;
 }
 
+ #cases, #resume, #about-me, #contact, #services {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-top: 60px;
+}
+
 /************************************************1. HOMEPAGE STYLES*******************************************************************/
 /*******************1.1 NAVIGATION SECTION********************/
 
@@ -37,9 +45,15 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: auto;
-    padding: 25px 25px;
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
     min-width: 300px;
+    position: fixed; 
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    background-color: var(--main-bg-color);
 }
 
 .navigation {
@@ -96,27 +110,27 @@ a:before {
     background-color: rgb(216, 204, 204);
 }
 
-#home-page {
-    overflow: hidden;
-    max-height: 100vh;
-    max-width: 100vw;
-}
-
 /*******************1.2 MAIN SECTION******************************/
+
+
+#home-page {
+max-height: 100vh;
+overflow: hidden;
+max-width: 100vw;
+position: relative;
+padding-top: 50px;
+}
 
 main {
     position: relative;
-    min-width: 500px;
+    min-width: 100vw;
 }
 
-#human-picture {
+#human-picture  {
+    width: 30vw;
     display: flex;
-    height: inherit;
-    overflow: hidden;
-}
-
-#human-picture > img {
-    height: 800px;
+    justify-self: center;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -355,7 +369,6 @@ footer {
     height: 50vh;
     position: relative;
     margin: 5px;
-   
 }
 
 #olf-cosmetics > img {
@@ -363,7 +376,6 @@ footer {
     border-radius: 50px; 
     box-shadow: 70px 100px 250px rgb(187, 185, 185);
 }
-
 #olf-img-text-container > p {
     position: absolute;
     color: black;
@@ -384,7 +396,269 @@ footer {
     height: 100%;
 }
 
+/****************************************************4. RESUME SECTION****************************************************************/
+#resume {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
 
+#headline {
+    font-size: 2em;
+    font-weight: 600;
+    color: black;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#skills-and-exp-wrapper {
+    display: flex;
+    justify-content: center;
+}
+#skills-wrapper {
+    margin-right: 50px;
+}
+
+#row-1, #row-2, #row-3{
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-container {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 25px 25px 25px;
+    gap: 5px;
+    color: black;
+    font-size: 0.8em;
+}
+.skill-container > p {
+    font-weight: 600;
+}
+.skill-container > img {
+    height: 40%; 
+    width: auto;
+}
+
+#experiences-timeline{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#experience-wrapper {
+    gap: 50px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.experience > p {
+    font-size: 1.2em;
+    color: black;
+    font-weight: 600;
+}
+.experience > p:hover {
+    color: var(--hover-state-color)
+}
+.experience > p > span {
+    font-size: 0.75em;
+    color: var(--font-color);
+    font-weight: 400;
+}
+.year {
+    margin-right: 50px;
+    font-weight: 500;
+    color: var(--hover-state-color)
+}
+
+/****************************************************5. ABOUT-ME SECTION****************************************************************/
+
+#about-me {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#testimonial-container {
+    width: 50%;
+    height: auto;
+    background-color: blue;
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    padding: 50px 40px;
+    margin-top: 15px;
+}
+
+#testimonial-img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+#testimonial-img > img{
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+} 
+#testimonial-text {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+#tesimonial-name {
+    color: var(--hover-state-color);
+    font-weight: 600;
+}
+
+#tesimonial-name > span > a {
+    text-decoration: underline;
+}
+
+#collaborated-brands-logos {
+    display: flex;
+    justify-content: center;
+    align-items:initial;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.brand-logo {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+.brand-logo > img {
+    width: 100%;
+    height: auto;
+}
+
+/****************************************************6. CONTACT SECTION****************************************************************/
+#contact {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#contact-info-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+#contact-img-container {
+    width: 50px;
+    height: 50px; 
+}
+#contact-img-container > img{
+   height: 100%;
+   width: auto;
+}
+
+#contact-info-mobile, #contact-info-email {
+    width: 40%;
+    border-radius: 10px;
+    background-color: royalblue;
+    padding: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-weight: 600;
+}
+#contact-info-mobile {
+    background-color: rgba(134, 196, 238, 0.2);
+}
+#contact-info-email {
+    background-color: rgba(235, 128, 146,0.2);
+}
+
+select {
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none; 
+    outline: none;
+}
+
+#form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+select {
+    flex: 1 1 30%;
+    border-bottom: 1px solid gray;
+    color: gray;
+    font-family: 'Poppins', sans-serif
+}
+
+select option { color: black; }
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    border-bottom: 1px black solid;
+}
+
+#form-message {
+    flex: 0 0 100%;
+}
+#form-container > button {
+    all: unset;
+    cursor: pointer;
+    color: var(--hover-state-color);
+    text-decoration: underline;
+}
+.form-input{
+    flex: 1 1 30%;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+    text-transform: capitalize;
+    
+}
+
+.form-input, select { margin-bottom: 20px }
+#form-message { width: 100% }
 
 /***********************************************MEDIA QUERIES***********************************************************************/
 
@@ -395,10 +669,13 @@ footer {
 }
 
 @media only screen and (max-width: 1200px){
+
     #profession, #animation, #ilustration, #interaction, #introduction{
         opacity: 0;
     } 
-    #services {
+
+
+    #services, #resume {
         height: auto;
         width: 100vw;
     }
@@ -424,10 +701,105 @@ footer {
     #project-images {
         justify-content: center;
     }
+    #skills-and-exp-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        order: 2;
+        margin: 0;
+    }
+
+    #row-1, #row-2, #row-3{
+        flex: wrap;
+        justify-self: center;
+    }
+
+    #contact-info-mobile, #contact-info-email {
+        flex: 1 1 50%;
+    }
+
+    #about-me {
+        height: auto;
+    }
+
+    #testimonial-container {
+        flex-direction: column;
+        height: fit-content;
+        width: 80%;
+        min-width: 250px;
+    }
+
+    #collaborated-brands-logos {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .brand-logo {
+        justify-content: center;
+    }
 }
 
+@media only screen and (max-width: 1198px){
+
+    @keyframes slideinleft {
+        0% {
+            left: -900000px;
+        }
+
+        50% {
+            left: 25%;
+            transform: translate(-25%);
+            opacity: 0.2
+        }
+
+        75% {
+            left: 40%;
+            transform: translate(-40%);
+            opacity: 0.7;
+        }
+        
+        100%{
+            left: 50%;
+            transform: translate(-50%);
+            opacity: 1;
+        }
+    }
+    
+    #profession, #introduction {
+        opacity: 1;
+        z-index: 4;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 10px;
+        transition: ease-in-out;
+    }
+
+    #profession {
+    top: 70%;
+    animation: slideinleft  linear 0.5s;
+    animation-delay: 0s;
+    }
+
+    #introduction {
+        top: 45%;
+        height: 20%;
+        animation: slideinleft  linear 0.5s;
+        animation-delay: 0s;
+        padding: 20px;
+    }
+}
 
 @media only screen and (max-width: 800px){
+
+    #cases, #resume, #about-me, #contact, #services {
+        height: auto;
+    }
     .navigation {
         display: none;
     }
@@ -435,12 +807,58 @@ footer {
         display:flex;
     }
 
-    #human-picture > img {
-        height: 800px;
-        width: auto;
+    #services > #headline {
+        padding: 10px;
+    }
+    #human-picture {
+        width: 80vw;
         margin: 0 auto;
+        justify-self: center;
     }
 
+    #testimonial-text {
+        text-align: justify;
+    }
+
+
+    #contact-info-container { 
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #contact-info-mobile, #contact-info-email {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    #contact {
+        gap:25px;
+    }
+
+    #form-container {
+        width: 100%;
+    }
+    #contact > #headline {
+        width:80%;
+    }
+    form {
+        width: 80%;
+    }
+
+    .form-input {
+        margin-right: 0;
+    }
+
+    .form-input, select {
+        flex: 1 1 100%;
+    }
+
+
+    #contact > footer > .social-media-icons,
+    #cases > footer > .social-media-icons {
+        flex-direction: row;
+    }
 
 
 }

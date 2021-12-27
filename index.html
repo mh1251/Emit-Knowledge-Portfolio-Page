@@ -9,14 +9,11 @@
     <title>Emit Knowledge Portfolio page</title>
 </head>
 
-<body>
-    <!---------------------------------HOMEPAGE SECTION START--------------------------------------------------->
-    <section id="home-page">
-        <!----NAV BAR----->
-        <nav id="nav-container">
+<body>  
+    <nav id="nav-container">
             <div class="logo"><img src="./assets/logo.PNG" alt=""></div>
             <ul class="navigation">
-                <li><a href="#">CASES</a></li>
+                <li><a href="#cases">CASES</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#resume">RESUME</a></li>
                 <li><a href="#about-me">ABOUT ME</a></li>
@@ -29,10 +26,12 @@
                 </div>
             </div>
         </nav>
-
+    <!---------------------------------HOMEPAGE SECTION START--------------------------------------------------->
+    <section id="home-page">
+        <!----NAV BAR----->
         <main>
-            <div id="human-picture"><img src="./assets/Young-man-doing-okay-gesture-on-transparent-background-PNG.png"
-                    alt=""></div>
+            <img id="human-picture" src="./assets/Young-man-doing-okay-gesture-on-transparent-background-PNG.png"
+                alt="">
             <div id="big-decorative-circle"></div>
             <div id="introduction">
                 <div id="waving-hand"><img src="./assets/waving-hand-light-skin-tone.png"></div>
@@ -75,26 +74,10 @@
             <p>ALL RIGHT RESERVED</p>
         </div>
     </section>
-    <!---------------------------------HOMEPAGE SECTION START--------------------------------------------------->
+    <!---------------------------------HOMEPAGE SECTION END--------------------------------------------------->
 
     <!---------------------------------SERVICES SECTION START--------------------------------------------------->
     <section id="services">
-        <nav id="nav-container">
-            <div class="logo"><img src="./assets/logo-white-background.PNG" alt=""></div>
-            <ul class="navigation">
-                <li><a href="#cases">CASES</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#resume">RESUME</a></li>
-                <li><a href="#about-me">ABOUT ME</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <div class="menu">
-                <div id="menu-bars">
-                    <div id="bar1"></div>
-                    <div id="bar2"></div>
-                </div>
-            </div>
-        </nav>
 
         <div id="headline">
             <p>I Know That <span>Good Design</span> Meant</p>
@@ -137,33 +120,17 @@
         </footer>
     </section>
     <!---------------------------------SERVICES SECTION END--------------------------------------------------->
-    
+
     <!---------------------------------CASES SECTION START--------------------------------------------------->
     <section id="cases">
-            <nav id="nav-container">
-                <div class="logo"><img src="./assets/logo.PNG" alt=""></div>
-                <ul class="navigation">
-                    <li><a href="#cases">CASES</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#resume">RESUME</a></li>
-                    <li><a href="#about-me">ABOUT ME</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-                <div class="menu">
-                    <div id="menu-bars">
-                        <div id="bar1"></div>
-                        <div id="bar2"></div>
-                    </div>
-                </div>
-            </nav>
 
         <div id="project-images">
             <div class="side-img"><img src="./assets/Phones.JPG" alt=""></div>
             <div id=olf-img-text-container>
                 <div id="olf-cosmetics"><img src="./assets/OLF cosmetics.jpg" alt=""></div>
                 <p>OLF COSMETICS</p>
-            </div> 
-            
+            </div>
+
             <div class="side-img"><img src="./assets/glasses-excited-face.PNG" alt=""></div>
         </div>
 
@@ -181,14 +148,191 @@
         </footer>
 
     </section>
-    <!---------------------------------CASES SECTION END--------------------------------------------------->
+    <!---------------------------------CASES SECTION END------------------------------------------------------>
 
+    <!---------------------------------RESUME SECTION START--------------------------------------------------->
 
-    <!-- 
-    <section id="resume"></section>
-    <section id="about-me"></section>
-    <section id="contact"></section> -->
+    <section id="resume">
+        <p id="headline">Skills & Experiences</p>
+        <div id="skills-and-exp-wrapper">
+            <div id="skills-wrapper">
+                <div id="row-1">
+                    <div class="skill-container">
+                        <img src="./assets/wordpress.png" alt="">
+                        <p>98%</p>
+                    </div>
 
+                    <div class="skill-container">
+                        <img src="./assets/skecth-logo.png" alt="">
+                        <p>56%</p>
+                    </div>
+                </div>
+
+                <div id="row-2">
+                    <div class="skill-container">
+                        <p>GATSBY JS</p>
+                    </div>
+
+                    <div class="skill-container">
+                        <img src="./assets/javaScript-logo.png" alt="">
+                        <p>59%</p>
+                    </div>
+
+                    <div class="skill-container">
+                        <img src="./assets/css-logo.png" alt="">
+                        <p>64%</p>
+                    </div>
+
+                </div>
+
+                <div id="row-3">
+                    <div class="skill-container">
+                        <img src="./assets/html-5-logo.png" alt="">
+                        <p>70%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="experiences-timeline">
+                <div id=experience-wrapper>
+                    <div class="year">2020</div>
+                    <div class="experience">
+                        <p>Senior Product Designer<br>
+                            <span>AMAZON INC</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div id=experience-wrapper>
+                    <div class="year">2019</div>
+                    <div class="experience">
+                        <p>UI/UX Web Designer <br>
+                            <span>GOOGLE</span>
+                        </p>
+                        <p>Internship Graphic Designer <br>
+                            <span>INVISIONAPP INC</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div id=experience-wrapper>
+                    <div class="year">2018</div>
+                    <div class="experience">
+                        <p>Senior WP Front-End Developer <br>
+                            <span>ENVATO</span>
+                        </p>
+                        <p>iOS Developer <br>
+                            <span>ZARA</span>
+                        </p>
+                        <p>Internship PHP Programmer<br>
+                            <span>APPLE</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-media-icons">
+                <div class="sm-icon"><img src="./assets/twitter-brands.svg"></div>
+                <div class="sm-icon"><img src="./assets/facebook-brands.svg" alt=""></div>
+                <div class="sm-icon"><img src="./assets/instagram-brands.svg" alt=""></div>
+            </div>
+
+            <div id="copyright">
+                <p>© 2020 MICAEL</p>
+                <p>ALL RIGHT RESERVED</p>
+            </div>
+        </footer>
+    </section>
+    <!-------------------------------------------------RESUME SECTION END------------------------------------------------------->
+
+    <!------------------------------------------------ ABOUT-ME SECTION START---------------------------------------------------->
+
+    <section id="about-me">
+        <div id="testimonial-container">
+            <div id="testimonial-img">
+                <img src="./assets/man-smiling.jfif" alt="">
+            </div>
+
+            <div id="testimonial-text-container">
+                <p id="testimonial-text">"Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt esse architecto totam nobis fugit aut fugiat.Totam nobis fugit aut fugiat."</p>
+                <p>
+                <p id="tesimonial-name"> Richard Moore <br>
+                    <span style="color: var(--font-color); font-weight: 400;">CEO and founder of <a
+                            style="color: rgb(7, 165, 157)" href="">coinbase.com</a></span>
+                </p>
+                </p>
+            </div>
+        </div>
+
+        <div id="collaborated-brands-logos">
+            <div class="brand-logo"><img src="./assets/LARK.png" alt=""></div>
+            <div class="brand-logo"><img src="./assets/varsity.png" alt=""></div>
+            <div class="brand-logo"><img src="./assets/doubleKnot.png" alt=""></div>
+            <div class="brand-logo"><img src="./assets/rapha.png" alt=""></div>
+            <div class="brand-logo"><img src="./assets/bond.png" alt=""></div>
+            <div class="brand-logo"><img src="./assets/nioz.png" alt=""></div>
+            <div class="brand-logo"><img src="./assets/scoundrel.png" alt=""></div>
+        </div>
+
+        <footer>
+            <div class="social-media-icons">
+                <div class="sm-icon"><img src="./assets/twitter-brands.svg"></div>
+                <div class="sm-icon"><img src="./assets/facebook-brands.svg" alt=""></div>
+                <div class="sm-icon"><img src="./assets/instagram-brands.svg" alt=""></div>
+            </div>
+
+            <div id="copyright">
+                <p>© 2020 MICAEL</p>
+                <p>ALL RIGHT RESERVED</p>
+            </div>
+        </footer>
+    </section>
+<!------------------------------------------------ ABOUT-ME SECTION END---------------------------------------------------->
+
+<!------------------------------------------------ CONTACT SECTION START--------------------------------------------------->
+    <section id="contact">
+        <p id="headline">Take a coffee & chat with me</p>
+
+        <div id="contact-info-container">
+            <div id="contact-info-email">
+                <div id="contact-img-container"><img src="./assets/heart-letter.png" alt=""></div>
+                <p>hello@micael.com</p>
+            </div>
+            <div id="contact-info-mobile">
+                <div id="contact-img-container"><img src="./assets/cell-phone.png" alt=""></div>
+                <p>(+056)323-48-6126</p>
+            </div>
+        </div>
+
+        <div id="form-container">
+            <form action="">
+                <input placeholder="Your name" type="text" name="name" id="form-name" class="form-input">
+                <input required placeholder="Your email"type="text" name="email" id="form-email" class="form-input">
+                <select placeholder="Subject(optional)" id="form-subject">
+                    <option value="" disabled selected>Subject(optional)</option>
+                    <option value="optional" class="form-input">Subject 1</option>
+                </select>
+                <textarea placeholder="Your message goes here" class="form-input" name="form-message" id="form-message" rows="4"></textarea>
+            </form> 
+            <button>SEND MESSAGE</button>
+        </div>
+        <footer>
+            <div class="social-media-icons">
+                <div class="sm-icon"><img src="./assets/twitter-brands.svg"></div>
+                <div class="sm-icon"><img src="./assets/facebook-brands.svg" alt=""></div>
+                <div class="sm-icon"><img src="./assets/instagram-brands.svg" alt=""></div>
+            </div>
+
+            <div id="copyright">
+                <p>© 2020 MICAEL</p>
+                <p>ALL RIGHT RESERVED</p>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
